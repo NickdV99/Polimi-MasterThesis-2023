@@ -50,8 +50,8 @@ This repository contains the colab notebooks for running experiments, analyzing 
 
 ## Contributors
 
-- [Author : Nicola della Volpe]
-- [Advisor: Prof. Cinzia Cappiello]
+- Author : [Nicola della Volpe]
+- Advisor: [Prof. Cinzia Cappiello]
 
 ## License
 
