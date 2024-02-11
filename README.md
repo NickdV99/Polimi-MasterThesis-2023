@@ -48,9 +48,49 @@ The structure of this thesis unfolds in a logical progression, mirroring the int
 
 This repository contains the colab notebooks for running experiments, analyzing results, and visualizing data related to prompt engineering and response evaluation in Large Language Models.
 
+### Experiment Notebooks:
+
+- [Evaluation of Correctness Race - high.ipynb](Evaluation%20of%20Correctness%20Race%20-%20high.ipynb)
+- [Evaluation of Correctness Race - middle.ipynb](Evaluation%20of%20Correctness%20Race%20-%20middle.ipynb)
+- [Evaluation of Correctness math_qa.ipynb](Evaluation%20of%20Correctness%20math_qa.ipynb)
+- [Evaluation of Correctness medmcqa.ipynb](Evaluation%20of%20Correctness%20medmcqa.ipynb)
+- [Evaluation of Text Quality Measures MedQuad-MedicalQnA.ipynb](Evaluation%20of%20Text%20Quality%20Measures%20MedQuad-MedicalQnA.ipynb)
+- [Evaluation of Text Quality Measures MultiContextLongAnswer.ipynb](Evaluation%20of%20Text%20Quality%20Measures%20MultiContextLongAnswer.ipynb)
+
+The experiments conducted in this study leverage various libraries, frameworks, and APIs, creating a comprehensive technological environment for the development and evaluation of language models. The key technologies employed are as follows:
+
+- **Google Colab:** Google Colab is a free, cloud-based platform designed for writing and executing Python code. It offers a convenient environment, particularly well-suited for running experiments, including those related to machine learning.
+
+- **OpenAI GPT-3.5-turbo:** GPT-3.5-turbo, developed by OpenAI, is a prominent language model within the GPT series. Renowned for its natural language processing capabilities, it serves as a crucial component in the experiments conducted.
+
+- **Python Libraries:**
+  - **datasets:** Used for loading and working with datasets.
+  - **pandas:** Employed for data manipulation and analysis.
+  - **random:** Utilized for generating random numbers.
+  - **openai:** OpenAI's Python library facilitates interactions with the GPT-3.5-turbo API.
+  - **matplotlib:** A comprehensive plotting library for creating visualizations in Python.
+
+- **Machine Learning Models:**
+  - **SBERT (Sentence-BERT):** SBERT plays an indirect role in calculating relevance scores. It is a variation of BERT, a pre-trained language model developed by Google, specifically adapted for computing dense sentence embeddings, thereby facilitating semantic similarity calculations in natural language processing tasks.
+
+- **Additional Tools:**
+  - **CountVectorizer and cosine similarity (from scikit-learn):** Utilized to calculate coherence scores by measuring the similarity between generated and ground truth answers.
+
+## Datasets
+ 
+- ### [medMCQA (Medical Multiple Choice Question-Answer) Dataset](https://huggingface.co/datasets/medmcqa) [Medical | Multiple Choice]
+
+- ### [mathQA (Mathematics Question-Answer) Dataset](https://huggingface.co/datasets/math_qa) [Mathematics | Multiple Choice]
+
+- ### [RACE (Reading Comprehension from Examinations) Dataset](https://huggingface.co/datasets/race) [General Knowledge | Multiple Choice]
+
+- ### [Multi-Context Long Answer Dataset](https://huggingface.co/datasets/nbtpj/multi-context-long-answer-dataset) [General Knowledge | Open Answer]
+
+- ### [MedQuad-MedicalQnA Dataset](https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset) [Medical | Open Answer]
+
 ## Contributors
 
-- Author : [Nicola della Volpe]
+- Author: [Nicola della Volpe]
 - Advisor: [Prof. Cinzia Cappiello]
 
 ## License
