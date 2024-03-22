@@ -8,16 +8,19 @@
 
 Large Language Models (LLMs) have become integral components in various applications, ranging from natural language understanding to content generation. As their significance grows, so does the need to scrutinize and evaluate their responses due to potential risks such as private data leaks and the generation of inappropriate, harmful, or misleading content.
 
-This master’s thesis delves into the assessment of Large Language Models responses, introducing key metrics such as correctness, coherence, relevance, and completeness. Recognizing that the quality of responses is intricately linked to the nature of the questions posed to Large Language Models, we explore the concept of prompt engineering as a crucial factor influencing response quality.
+This master's thesis delves into the assessment of Large Language Models responses, introducing key metrics such as correctness, coherence, relevance, and completeness. Recognizing that the quality of responses is intricately linked to the nature of the questions posed to Large Language Models, we explore the concept of prompt engineering as a crucial factor influencing response quality.
 
-To conduct a comprehensive evaluation, we utilize multi-domain datasets as well as domain-specific ones, encompassing both open-answer and multiple-choice formats, in order to ensure an unbiased and generalized evaluation. Our analysis reveals intriguing findings, demonstrating that the effectiveness of prompt engineering is not universal. While in certain cases, optimizing prompts enhances response quality, in others, it introduces unnecessary complexity, leading to inferior results.
+To conduct a comprehensive evaluation, we utilize multi-domain datasets as well as domain-specific ones, encompassing both open-answers and multiple-choice formats, in order to ensure an unbiased and generalized evaluation. 
+Our analysis reveals intriguing findings, demonstrating that the effectiveness of prompt engineering is not universal. While in certain cases, optimizing prompts enhances response quality, in others, it introduces unnecessary complexity, leading to inferior results.
 
 ## Table of Contents
 
 - [Statement of the Problem](#statement-of-the-problem)
 - [Research Objectives](#research-objectives)
-- [Thesis Structure](#thesis-structure)
-- [Usage](#usage)
+- [Methodology Workflow](#methodology-workflow)
+- [Experiment Notebooks](#experiment-notebooks)
+- [Datasets](#datasets)
+- [Contributors](#contributors)
 
 ## Statement of the Problem
 
@@ -27,31 +30,46 @@ The crux of our research lies in acknowledging the inherent challenges that acco
 
 ## Research Objectives
 
-The overarching objective of this master's thesis is to provide a nuanced understanding of the quality of responses produced by Large Language Models, particularly in the face of varying questions. Specific objectives include:
+The key objectives of this master's thesis are to:
 
-- To introduce and define key metrics such as correctness, coherence, relevance, and completeness for assessing the quality of Large Language Models responses.
-- To explore the impact of prompt engineering on the quality of responses and discern the conditions under which it is effective or counterproductive.
-- To utilize datasets of different types and from various domains in order to have unbiased and universal results.
+- Evaluate the reliability of Large Language Models (LLMs)
+- Discern the conditions under which prompt engineering strategies prove effective or counterproductive.
 
-## Thesis Structure
+## Methodology Workflow
 
-The structure of this thesis unfolds in a logical progression, mirroring the intricacies of our exploration into LLM responses and prompt engineering. Following this introduction, the subsequent sections include:
+Our methodology consists of the following key steps:
 
-1. **State of the art:** A comprehensive survey of existing literature, exploring the evolution of LLMs, their applications, and the state of research in evaluating response quality.
-  
-2. **Methodology:** A detailed exposition of our research methodology, outlining the strategies employed in assessing correctness, coherence, relevance, and completeness. This section also delves into the datasets used, the rationale behind their selection, and the prompt engineering methods adopted to improve response quality.
-  
-3. **Experiments:** In this section, we describe the experiments conducted to evaluate the impact of prompt engineering on LLM responses. We detail the setup, parameters, and conditions of our experiments to provide transparency and repeatability.
-  
-4. **Results analysis:** A presentation and analysis of the intriguing findings gleaned from our comprehensive evaluation, shedding light on the nuances of prompt engineering and its impact on response quality.
-  
-5. **Conclusion:** A succinct summary of our research, encapsulating the key takeaways, contributions, and avenues for future exploration.
+1. **Dataset Selection and Preparation:**
+    - Begin by selecting diverse datasets relevant to our research objectives. We employ datasets of different types (Multiple-Choice Question Answer and Open-Ended Answer) and both domain-specific or multi-domain, to ensure unbiased and universal results.
+    - Prepare the datasets by ensuring they are formatted appropriately for analysis.
 
-## Usage
+2. **Definition of Key Metrics:**
+    - We introduce and define key metrics, including correctness, coherence, relevance, and completeness. These metrics serve as the foundation for assessing the quality of responses generated by LLMs.
 
-This repository contains the colab notebooks for running experiments, analyzing results, and visualizing data related to prompt engineering and response evaluation in Large Language Models.
+3. **Question Extraction:**
+    - From each dataset, extract a subset of questions for evaluation. Aim for a consistent number, such as 50 questions per dataset.
+    
+4. **Prompt Engineering:**
+    - We investigate various prompt engineering strategies, such as Thought Chaining, Self Correction, Context Injection, and Tagged Source. These strategies are systematically applied to specific datasets in an iterative manner. Our approach aims to prompt the model to generate responses tailored to the unique characteristics of the questions posed.
+
+5. **LLM Evaluation:**
+    - Present both the original questions and the engineered variations to the LLM (in this case, GPT-3.5 Turbo).
+    - Collect responses from the LLM for each question.
+
+6. **Evaluation Criteria:**
+    - For Multiple Choice Question Answering (MCQA) datasets:
+        - Evaluate correctness by comparing the option index provided by the model to the correct option in the ground truth dataset.
+    - For Open-Ended Answer datasets:
+        - Evaluate completeness, coherence, and relevance of the free-text responses generated by the LLM.
+
+7. **Result Analysis:**
+    - Analyze the responses obtained from the LLM across different prompt engineering strategies.
+    - Assess the effectiveness of each strategy in improving response quality.
+    - Interpret the results to identify trends, patterns, and insights regarding the performance of the LLM.
 
 ### Experiment Notebooks:
+
+The colab notebooks for running experiments, analyzing results, and visualizing data related to prompt engineering and response evaluation in Large Language Models.
 
 - [Evaluation of Correctness Race - high.ipynb](Evaluation%20of%20Correctness%20Race%20-%20high.ipynb)
 - [Evaluation of Correctness Race - middle.ipynb](Evaluation%20of%20Correctness%20Race%20-%20middle.ipynb)
