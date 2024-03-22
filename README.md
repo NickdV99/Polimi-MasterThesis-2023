@@ -13,6 +13,8 @@ This master's thesis delves into the assessment of Large Language Models respons
 To conduct a comprehensive evaluation, we utilize multi-domain datasets as well as domain-specific ones, encompassing both open-answers and multiple-choice formats, in order to ensure an unbiased and generalized evaluation. 
 Our analysis reveals intriguing findings, demonstrating that the effectiveness of prompt engineering is not universal. While in certain cases, optimizing prompts enhances response quality, in others, it introduces unnecessary complexity, leading to inferior results.
 
+To learn more about the research check out the [Executive Summary](Evaluation%20of%20Correctness%20Race%20-%20high.ipynb).
+
 ## Table of Contents
 
 - [Statement of the Problem](#statement-of-the-problem)
