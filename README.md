@@ -1,4 +1,6 @@
-# Polimi-MasterThesis-2023
+<p align="center">
+  <img width="100%" src="https://i.imgur.com/tm9mSuM.png"/>
+</p>
 
 # Prompt Engineering and Response Evaluation: Unveil the Dynamics of Large Language Models
 
@@ -15,6 +17,7 @@ To conduct a comprehensive evaluation, we utilize multi-domain datasets as well 
 - [Statement of the Problem](#statement-of-the-problem)
 - [Research Objectives](#research-objectives)
 - [Thesis Structure](#thesis-structure)
+- [Usage](#usage)
 
 ## Statement of the Problem
 
@@ -90,8 +93,8 @@ The experiments conducted in this study leverage various libraries, frameworks, 
 
 ## Contributors
 
-- Author: [Nicola della Volpe]
-- Advisor: [Prof. Cinzia Cappiello]
+- Author: Nicola della Volpe
+- Advisor: Prof. Cinzia Cappiello
 
 ## License
 
