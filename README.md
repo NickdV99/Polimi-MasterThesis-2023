@@ -2,7 +2,7 @@
   <img width="100%" src="https://i.imgur.com/tm9mSuM.png"/>
 </p>
 
-# Prompt Engineering and Response Evaluation: Unveil the Dynamics of Large Language Models
+# Prompt Engineering’s Influence on Result Reliability in Large Language Models
 
 ## Abstract
 
